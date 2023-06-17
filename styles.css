@@ -1,0 +1,91 @@
+html {
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+/* Cards Modificadas */
+.content-two2 {
+  margin-top: 3rem;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-modify {
+  width: 20%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0rem 0rem 2rem 0.3rem #0003;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.card-modify:hover {
+  transform: scale(1.1);
+  transition: 300ms ease;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  background-color: #820000;
+  border-radius: 50%;
+  position: absolute;
+  top: -20%;
+  left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease;
+}
+.logo svg {
+  fill: #fff;
+  width: 4rem;
+  height: 4rem;
+}
+.card-modify h3 {
+  margin-top: 2rem;
+  text-align: center;
+}
+.card-modify p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.card-modify:nth-child(1) {
+  animation: into-repeat 700ms both 0s ease;
+}
+.card-modify:nth-child(2) {
+  animation: into-repeat 700ms both 500ms ease;
+}
+.card-modify:nth-child(3) {
+  animation: into-repeat 700ms both 800ms ease;
+}
+.card-modify:nth-child(4) {
+  animation: into-repeat 700ms both 1200ms ease;
+}
+
+@keyframes into-repeat {
+  0% {
+    opacity: 0;
+    transform: translate(400%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
